@@ -10,6 +10,14 @@ def mul(a,b):
 def div(a,b):
     div=a/b
     print("The quotient is",div)
+def max(a,b):
+    if(a>b):
+        print(a, "is greater")
+    else:
+        print(b, "is greater")
+def per(a,b):
+    res=(a/100)*b
+    print("The percentage of first number against the second number is",res)
 flag=0
 while(flag==0):
     a=int(input("Enter the first number to be calculated"))
@@ -19,7 +27,9 @@ while(flag==0):
                     2.Subtract the two numbers
                     3.Multiply the two numbers
                     4.Divide the two numbers
-                    5.Exit"""))
+                    5.Find the percent of the first number against the second
+                    6.To find which of the two numbers is greater
+                    7.Exit"""))
     match(i):
         case 1:
             add(a,b)
@@ -30,5 +40,9 @@ while(flag==0):
         case 4:
             div(a,b)
         case 5:
+            per(a,b)
+        case 6:
+            max(a,b)
+        case 6:
             break
             flag=1
