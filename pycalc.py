@@ -15,6 +15,11 @@ def max(a,b):
         print(a, "is greater")
     else:
         print(b, "is greater")
+def min(a,b):
+    if(a<b):
+        print(a, "is greater")
+    else:
+        print(b, "is greater")
 def per(a,b):
     res=(a/100)*b
     print("The percentage of first number against the second number is",res)
